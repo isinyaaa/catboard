@@ -1,0 +1,22 @@
+[project]
+name = "catboard"
+version = "0.1.0"
+description = "Add your description here"
+authors = [{ name = "Isabella Basso", email = "isabellabdoamaral@usp.br" }]
+dependencies = ["fastapi>=0.108.0", "uvicorn>=0.25.0"]
+readme = "README.md"
+requires-python = ">= 3.10"
+
+[project.scripts]
+server = "catboard.__main__:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
